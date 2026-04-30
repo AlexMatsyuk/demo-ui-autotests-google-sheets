@@ -1,0 +1,19 @@
+{
+  "Delete": "Delete",
+  "OK": "OK",
+  "Cancel": "Cancel",
+  "Save": "Save",
+  "Close": "Close",
+  "Apply": "Apply",
+  "Clear": "Clear",
+  "SelectAll": "Select all",
+  "FilterByCondition": "Filter by condition",
+  "FilterByValues": "Filter by values",
+  "File": "File",
+  "Edit": "Edit",
+  "Insert": "Insert",
+  "Format": "Format",
+  "Data": "Data",
+  "CreateFilter": "Create a filter",
+  "RemoveFilter": "Remove filter"
+}

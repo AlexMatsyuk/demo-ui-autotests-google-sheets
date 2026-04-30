@@ -1,0 +1,220 @@
+<!DOCTYPE html><html xmlns:t=http://microsoft.com/schemas/VisualStudio/TeamTest/2010>
+  <head>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta charset=utf-8>
+    <style>body,form,fieldset,h2,h3,h4,h5,h6,p,pre,blockquote,ul,ol,dl,address{margin:0;padding:0}.wrapOverall{width:auto;margin:-8px 0 0 0;height:auto;margin-left:auto;margin-right:auto}#floatingImageBackground{text-align:center;position:fixed;display:none;top:50%;left:50%;margin-top:-300px;margin-left:-330px;z-index:100;width:680px;height:600px;visibility:hidden;background-color:#fff;background-repeat:no-repeat;border:2px #0f9bdc;border-style:solid}.hWhite{color:#fff}.titleCenterd{position:relative;top:12px}.StatusBar{width:100%;height:60px}.statusBarPassed{background-color:#5bab5b}.statusBarFailed{background-color:#b93333}.statusBarFailedInner{position:relative;background-color:#a90000;width:100%;height:70%;margin-left:auto;margin-right:auto;margin-top:auto;margin-bottom:auto;top:15%}.statusBarPassedInner{position:relative;background-color:#339833;width:100%;height:70%;margin-left:auto;margin-right:auto;margin-top:auto;margin-bottom:auto;top:15%}#floatingImage{max-width:90%;max-height:90%;padding-top:3%}.floatingImageCloseButton{background-image:url('data:image/png;base64,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');font-size:50px;width:40px;height:40px;position:relative;bottom:20px;left:3%;text-align:center;cursor:pointer;float:right;background-repeat:no-repeat}.atachmentImage{float:right;cursor:pointer;width:20px;height:20px;background-size:20px 20px;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAJFBMVEUAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAW+S7RAAAAC3RSTlMAABBAYHCfv8/f7y5wfg4AAACNSURBVHhendC9DYMwFEXhq0BEi7egTJEBIlHSuKdhBHpGYARGSEtA8JaDBwjbt0Aop/zk5z8Y6gZoh8KVyVrl4NEqDDiXZ7JVGZPu0O4wbPDsxGuyKCXoh28IM4Q6YMzfTQAfIPahx1rhQa2QONAJnXHwUoiugEd4Uz6WL8ZXF4qfP/EH9fSFs4Wh/oAFE9baEPQEC+YAAAAASUVORK5CYIIyNjk=')}#exceptionArrow{float:left;font-size:20px}h1{font-size:25px}body{font:15px/18px "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;margin-top:-10px;min-width:890px}p{text-align:center}a:link{color:#1da1ec;text-decoration:none;border-bottom:1px dotted #ffbac8}a:visited{color:#9b0780;border-bottom:0;text-decoration:none}a:hover,a:focus{color:#3ec141;border-bottom:1px solid #fff;text-decoration:none}.StatusesBorders{border-width:0;border-right:1px solid;border-left:1px solid;width:100px}.PackageStatus{width:100px}.SummaryTable{width:auto;max-width:407px;float:left;margin-right:20px}#divToRefresh>div>table.SummaryTable>tbody>tr>th{width:auto}.DetailsTable{width:auto;max-width:1150px;float:left;margin-right:20px;text-align:left;word-wrap:break-word}.StatusesTable{width:auto}#divToRefresh>div.SummaryDiv>table.DetailsTable>tbody>tr>td{text-align:left;word-wrap:break-word}#divToRefresh>div.SummaryDiv>table.DetailsTable>tbody>tr>th{width:30px}td.slowest{width:auto}#Totaltt{min-width:250px;width:auto;float:left;margin-right:20px}.SummaryDiv{width:90%;border-top:1px solid #e5eff8;border-right:1px solid #e5eff8;margin:1em auto;border-collapse:collapse}.Summary{float:left;border-collapse:collapse}#btn-download{font-size:14px}.c{background:#dbedff;width:170px}.testNameFailed{color:#ff1212}.tp{color:#178700}.cFailed{background:#fed9d98f;width:30px}.undefined{background:#f8f8ff}.cp{background:#addcb71a;width:30px}#TotalPassed{min-width:30px;width:auto;height:auto;color:#7ccd7c;background:#c0eec0;border:1px solid #7ccd7c;margin-bottom:5px}#TotalWarn{min-width:30px;width:auto;height:auto;color:#e4c100;background:#fbe87e;border:1px solid #e4c100;margin-bottom:5px}#TotalFailed{min-width:30px;width:auto;height:auto;color:#d42945;background:#fed9d9;border:1px solid #d42945;margin-bottom:5px}#TotalInfo{min-width:30px;width:auto;height:auto;border:1px solid #c7c7c7;color:#c7c7c7;background:#e0e0e0}#dataViewer{width:240px}.om{height:auto;width:100%;cursor:pointer;text-decoration:none;text-align:left;color:#1b99fb;background-color:#fff;border:1px solid #7ac5ff;float:left;text-indent:5px;padding-top:3px;padding-bottom:3px}.os{height:auto;width:100%;cursor:pointer;text-decoration:none;text-align:left;color:#04671d;background-color:#c0eec0;border:1px solid #000;float:left;text-indent:5px;padding-top:3px;padding-bottom:3px;margin:2px;font-weight:bold;margin-bottom:15px}.OpenFailedStepButton{height:auto;width:100%;cursor:pointer;text-decoration:none;text-align:left;color:#880b0b;background-color:#fed9d9;border:1px solid #000;float:left;text-indent:5px;padding-top:3px;padding-bottom:3px;margin:2px;font-weight:bold;margin-bottom:15px}.om:hover{background-color:#bfe3ff;text-decoration:none}.l{font-size:13px;white-space:pre-line}#m{color:#1b99fb;top:0;left:25px;font-weight:normal;text-align:center;font-size:15px;font-family:"Trebuchet MS",Arial,Helvetica,sans-serif}.sdk{color:#04671d;background-color:#dbedff;font-weight:bold;width:1%}.sdv{font-size:13px}#StepButtonText{color:#fff;top:0;left:25px;font-weight:normal;text-align:center;font-size:15px;font-family:"Trebuchet MS",Arial,Helvetica,sans-serif}.NumberTag{display:inline;padding-left:3px;padding-right:3px;margin-right:4px;height:auto;color:#678197;border:1px solid #78bcff;background-color:#fff;border-radius:8px;text-align:center;margin-bottom:2px;line-height:27px}.NumberTagRed{background-color:#fed9d9}.NumberTagGreen{background-color:#c0eec0}.NumberTagYellow{background-color:#fbe87e}.h{display:none;visibility:hidden}.v{visibility:visible}.fa-search:before{content:''}.s{float:right;border-left:0;border-right:0;border-bottom:0;border-top:0;border-color:#fff}.e{color:#880b0b;background-color:#f3e0e0;font-weight:bold;font-size:13px;margin-top:5px;margin-right:5px}.stackTraceLink{font-weight:bold;font-size:13px;margin-right:5px}.stackTrace{float:right;font-weight:bold;font-size:13px;margin-top:5px;margin-right:5px;margin-left:30px}.copyJson{float:left;font-weight:bold;font-size:13px;margin-top:5px;margin-right:5px;margin-left:30px}</style>
+    <style>table a,table a:link,table a:visited{border:0}img{border:0}table{width:99%;margin-bottom:3px;padding-top:30px;margin-right:auto;margin-left:auto;border-collapse:collapse;border:1px solid #a2caf2}caption{color:#9ba9b4;font-size:16px;letter-spacing:.2em;margin:1em 0 0 0;caption-side:top;text-align:center;font-weight:normal;border-top:1px solid #a2caf2;border-left:1px solid #a2caf2;border-right:1px solid #a2caf2;padding:5px 10px 5px 15px}tr.odd .column1{background:#dbedff}tr.odd.column1Failed{background:#fed9d9;width:30px}tr.odd td,tr.sep td{background:#fff}tr.sep .c{background:#7ccd7c}tr.odd .ex,tr.sep .ex,td.ex{text-align:left;width:100px}td.exShow{text-align:left;width:100px;color:#000}td.statusCount{width:auto}th.statusCount{width:auto}td.critical{text-align:left;width:100px}td.Message{text-align:left;width:auto;word-wrap:break-word}td.mss{text-align:left;width:auto;word-wrap:break-word;max-width:600px}.Atached{width:30px}.ci{width:95%;border:1px solid #dcdce4}td.lt{text-align:left;color:#000;font-size:12px}tr.sep .error,tr.odd .error,td.error{background:#f08080}tr.odd .warn,tr.sep .warn,td.warn{color:#e4c100;background:#fbe87e;width:90px}tr.odd .info,td.info,tr.sep .info{color:#c7c7c7;background:#e0e0e0;width:90px}tr.odd .failed,tr.sep.failed,td.failed{color:#d42945;background:#fed9d9;width:90px}td{color:#425b71;padding:.3em 1em;text-align:left;border-left:1px solid #a2caf2;border-top:1px solid #a2caf2;word-wrap:break-word;max-width:1000px}tr.odd .passed,tr.sep.passed,td.passed{color:#7ccd7c;background:#c0eec0;width:90px}th{font-weight:normal;color:#678197;text-align:left;border-left:1px solid #a2caf2;border-top:1px solid #a2caf2;padding:.3em 1em}thead th.tt{font-size:17px;font-weight:normal}thead th{background:#dbedff;text-align:center;font:bold 1.2em/2em "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;color:#66a3d3;font-size:14px;padding:1px}tfoot th{text-align:center;background:#f4f9fe}tfoot th strong{font:bold 1.2em "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;margin:.5em .5em .5em 0;color:#678197}tfoot th em{color:#678197;font-weight:bold;font-size:1.1em;font-style:normal}.FiterResults{height:auto;cursor:pointer;text-decoration:none;text-align:center;color:#fff;background-color:#413a3a;border:1px solid #7ac5ff;float:left;padding-right:30px;padding-top:10px;padding-left:30px;padding-bottom:10px;margin:10px 0 10px 10px;min-width:250px}.TestsFilterCriteria{height:auto;max-width:100%;cursor:pointer;text-decoration:none;text-align:center;color:#413a3a;float:left;padding-right:30px;padding-top:10px;padding-left:10px;padding-bottom:10px;margin:10px 0 10px 10px}.fa-search{content:''}.ShowRules{cursor:pointer;text-decoration:underline;text-align:center;color:#141dc9;float:left;padding-right:10px;padding-top:10px;padding-left:30px;padding-bottom:10px;margin:10px 0 10px 10px}</style><script language=javascript>function copyToClipboard(n){var t=document.createElement("textarea");t.value=GetElementsByXpath(n)[0].innerHTML;document.body.appendChild(t);t.select();document.execCommand("copy");document.body.removeChild(t)}function SH(n,t,i,r,u){document.getElementById(n).className.includes("v")?(document.getElementById(t).innerHTML=i,document.getElementById(n).className="h"):(document.getElementById(t).innerHTML=r,document.getElementById(n).className="v "+u)}function SHs(n,t,i,r,u){document.getElementById(n).className.includes("v")?(document.getElementById(t).innerHTML=i,GetElementsByXpath("//*[contains(@id,'"+n+"') and not(@id='"+t+"')]").forEach(function(n){n.className="h"})):(document.getElementById(t).innerHTML=r,GetElementsByXpath("//*[starts-with(@id,'"+n+"')]").forEach(function(n){n.className="v "+u}))}function FilterRows(){for(var i,t="//tr[contains(@id,'rT')]",n=0;n<arguments.length;n++)i=GetElementsByXpath("//input[@id='filter"+arguments[n]+"']")[0].value,i&&(t=t+"[./td[@id='r"+arguments[n]+"' and .//*[contains(text(),'"+i+"')]]]");ReplaceClass(t,"h","v")}function SortRows(n){for(var i,t,e,o,f,h=0,c,s,r=!0,u="asc";r;){for(r=!1,i=GetElementsByXpath("//table[@id='ReportsTable']//tr[contains(@id,'rT') and contains(@class,'v')]"),t=0;t<i.length-1;t++)if(f=!1,e=i[t].querySelector('[id="r'+n+'"]').textContent,o=i[t+1].querySelector('[id="r'+n+'"]').textContent,u=="asc"){if(e.toLowerCase()>o.toLowerCase()){f=!0;break}}else if(u=="desc"&&e.toLowerCase()<o.toLowerCase()){f=!0;break}f?(i[t].parentNode.insertBefore(i[t+1],i[t]),r=!0,h++):h==0&&u=="asc"&&(u="desc",r=!0)}for(i=GetElementsByXpath("//table[@id='ReportsTable']//tr[contains(@id,'rT') and contains(@class,'v')]"),t=0;t<i.length-1;t++)c=i[t].id.replace("rT ",""),s=GetElementsByXpath("//table[@id='ReportsTable']//tr[@id='"+c+"TsC']")[0],s.parentNode.insertBefore(s,i[t].nextSibling)}function ReplaceClass(n,t,i){for(var u,f=GetElementsByXpath(n),r=0,e=f.length;r<e;++r)u=f[r],u.className=u.className.replace(t,i)}function ReplaceText(n,t,i){for(var u,f=GetElementsByXpath(n),r=0,e=f.length;r<e;++r)u=f[r],u.textContent=u.textContent.replace(t,i)}function SetText(n,t){for(var u,r=GetElementsByXpath(n),i=0,f=r.length;i<f;++i)u=r[i],u.textContent=t}function ClearValue(n){for(var i=GetElementsByXpath(n),t=0,r=i.length;t<r;++t)i[t].value=""}function CU(n,t){for(var i,u=GetElementsByXpath(n)[0].checked,f=GetElementsByXpath(t),r=0,e=f.length;r<e;++r)i=f[r],u&&!i.className.includes(" selected")?i.className=i.className+" selected":!u&&i.className.includes(" selected")&&(i.className=i.className.replace(" selected",""))}function CUAll(n,t){for(var u=GetElementsByXpath(n)[0].checked,r=GetElementsByXpath(t),i=0,f=r.length;i<f;++i)r[i].checked=u}function UncheckAll(n){for(var i=GetElementsByXpath(n),t=0,r=i.length;t<r;++t)i[t].checked=!1}function SetTfsTestFilterCriteria(n,t){for(var u=GetElementsByXpath(n),i="",r=0,f=u.length;r<f;++r)i=i+"Name="+u[r].textContent+"|";i=i.substring(0,i.length-1);GetElementsByXpath(t)[0].textContent=i;copyToClipboard(t)}function GetElementsByXpath(n){var t=document.evaluate(n,document.documentElement,null,XPathResult.ORDERED_NODE_ITERATOR_TYPE,null),i=[];if(t)while(node=t.iterateNext())i.push(node);return i}function AddEventListener(){var n=document.getElementById("btn-download");n.addEventListener("click",function(){n.href=canvas.toDataURL("image/png")})}function show(n){document.getElementById(n).style.visibility="visible";document.getElementById(n).style.display="block"}function hide(n){document.getElementById(n).style.visibility="hidden";document.getElementById(n).style.display="none"}function OpenInNewWindow(){var n=document.getElementById("floatingImage"),t=n.getAttribute("src");window.open(t,"Image")}function updateFloatingImage(n){document.getElementById("floatingImage").src=n}function download(n,t){console.log("download method");var i=document.createElement("a");i.setAttribute("href","data:text/plain;charset=utf-8,"+encodeURIComponent(t));i.setAttribute("download",n);i.style.display="none";document.body.appendChild(i);i.click();document.body.removeChild(i)}function downloadCurrentHtml(){var n=window.location.href,t=n.substring(n.lastIndexOf("/")+1),i=t.substring(0,t.lastIndexOf("."))+".with_comments.html";download(i,document.documentElement.innerHTML)}function saveComment(n){var i,t,r;for(console.log("saveComment mehtod"),i=GetElementsByXpath(n),t=0,r=i.length;t<r;++t)i[t].setAttribute("value",i[t].value)}function extractComment(n){for(var i=GetElementsByXpath(n),t=0,r=i.length;t<r;++t)i[t].value=i[t].getAttribute("value")}var myColor=["#c0eec0","#fed9d9","#FBE87E"],myStrokeColor=["#7CCD7C","#d42945","#ffcc00"]</script><title>User@DEV-BY-0F8D3 2026-04-30 15:16:28</title>
+  
+  <body>
+    <div id=divToRefresh class=wrapOverall>
+      <div id=floatingImageBackground class=floatingImageBackground style=visibility:hidden><strong style=font-size:20px>Click image to view in new browser tab</strong><div class=floatingImageCloseButton onclick='hide("floatingImageBackground")'></div><img src="" id=floatingImage onclick=OpenInNewWindow()></div>
+      <div class=SummaryDiv>
+        <table class="DetailsTable StatusesTable">
+          <caption style=min-width:150px>Tests Statuses
+          <tbody>
+            <tr class=odd>
+              <th class="c statusCount">Total
+              <td class=statusCount>1
+            
+            <tr>
+              <th scope=row class="c statusCount">Passed
+              <td class=statusCount>1
+            
+            <tr>
+              <th scope=row class="c statusCount">Failed
+              <td class=statusCount>0
+            
+          
+        </table>
+        <table class=SummaryTable>
+          <caption>Run Time Summary
+          <tbody>
+            <tr class=odd>
+              <th class=c>Start Time
+              <td>2026-04-30 15:16:21 +03UTC
+            
+            <tr>
+              <th class=c>End Time
+              <td>2026-04-30 15:16:28 +03UTC
+            
+            <tr>
+              <th class=c>Duration
+              <td>00:00:07.137
+            
+          
+        </table>
+        <table class=DetailsTable>
+          <caption>Tests Details
+          <tbody>
+            <tr>
+              <th scope=row class=c style=width:15%>configuration
+              <td>Debug
+            
+          
+        </table>
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td><a id=saveAll class=FiterResults style=background-color:#04671d onclick='saveComment("//input[@class=\"ci\"]");&#xD;&#xA;                                                      saveComment("//textarea[@class=\"ci\"]");&#xD;&#xA;                                                      downloadCurrentHtml();' type=button><div class=m>Save changes and comments</div></a><a class=FiterResults style=background-color:#04671d onclick='extractComment("//input[@class=\"ci\"]");&#xD;&#xA;                                                      extractComment("//textarea[@class=\"ci\"]")' type=button><div class=m>Show comments</div></a>
+            <td style=width:100%><textarea name=server id=mainComment class=ci type=text style=width:100%;height:90px;color:#e60909 placeholder="Type comments here or in the row for particular test. Click 'Save changes and comments' button, new .html report with changes will be downloaded. Now comments are saved and you can share newly generated html report with other people, comments will appear by clicking 'Show comments' button."></textarea>
+          
+          <tr>
+            <td style=min-width:250px><a class=FiterResults style=background-color:#072563ed onclick='SetTfsTestFilterCriteria("//tr[contains(@id,\"rT\") and contains(@class,\"selected\")]//div[contains(@class,\"m \")]", "//span[@id=\"tfsTestFilter\"]")'><div class=m>Generate Tests filter <br> and copy to clipboard</div></a>
+            <td style=width:100%><span id=tfsTestFilter class=TestsFilterCriteria>Check test cases and click button "Generate Tests filter".
+                                        See filter rules
+                                        <a target=_blank href=https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md>here</a>
+                                        and 
+                                        <a target=_blank href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-test?tabs=netcore21#filter-option-details">here</a></span>
+          
+          <tr>
+            <td><a class=FiterResults onclick='ReplaceClass("//tr[contains(@id,\"rT\")]", "h", "v");&#xD;&#xA;                                                   ClearValue("//input[contains(@id,\"filter\")]");'><div class=m>Show All Tests</div></a>
+            <td><a class=FiterResults onclick='ReplaceClass("//tr[contains(@id,\"rT\")][contains(@class,\"testPassed\")]", "v", "h");&#xD;&#xA;                                                   ReplaceClass("//tr[contains(@id,\"TsC\")][./preceding-sibling::tr[1][contains(@id,\"rT\") and contains(@class,\"testPassed\")]]", "v", "h");&#xD;&#xA;                                                   ClearValue("//input[contains(@id,\"filter\")]");'><div class=m>Hide Passed Tests</div></a><a class=FiterResults onclick='UncheckAll("//tr[contains(@id,\"rT\") and contains(@class,\"selected\") and contains(@class,\"v\")]//input[@type=\"checkbox\"]");&#xD;&#xA;                                                   ReplaceClass("//tr[contains(@id,\"rT\") and contains(@class,\"selected\")]", "v", "h");&#xD;&#xA;                                                   ReplaceClass("//tr[contains(@id,\"TsC\")][./preceding-sibling::tr[1][contains(@id,\"rT\") and contains(@class,\"selected\")]]", "v", "h");&#xD;&#xA;                                                   ClearValue("//input[contains(@id,\"filter\")]");&#xD;&#xA;                                                   ReplaceClass("//tr[contains(@id,\"rT\") and contains(@class,\"selected\")]", " selected", "");&#xD;&#xA;                                                   '><div class=m>Hide and Uncheck Selected Tests</div></a><a class=FiterResults onclick='ReplaceClass("//tr[contains(@id,\"TsC\")]", "v", "h");&#xD;&#xA;                                                   ReplaceText("//div[@class=\"om\"]/div[contains(@class,\"m\")]", "Hide ", "");'><div class=m>Collapse All</div></a><a class=ShowRules onclick='ReplaceClass("//tr[contains(@id,\"infoRow\")]", "h", "v");cursor:pointer;'>click here for help</a>
+          
+          <tr id=infoRow class=h>
+            <td>
+            <td>
+              <p style="text-align:left;padding:10px 10px 10px 10px">
+                                        1. Don't use IE. Reports work in Chrome and Firefox browser only. Chrome is preferrable.
+                                        <br>
+                                        2. You can click TestMethod name to view logs.
+                                        <br>
+                                        3. When logs are expanded, additionally you can click image icon to view screenshot, or "Show Stacktrace link" to view stacktrace, it they are present (usually stacktrace and screenshot are displayed in the failed tests only).
+                                        <br>
+                                        4. Button "Hide Passed Tests" does not uncheck passed rows, it just hides them.
+                                        <br>
+                                        5. You can click Column titles marked by "↕" sign to sort. Sorting can be applied only by 1 column. Sorting is applied for visible rows only. For ~120 rows sorting may take about 5 seconds, during which page is unresponsive.
+                                        <br>
+                                        6. You can type search keyword in multiple search-boxes and the click "filter" button. Results, that correspond to all the specified search keywords, will be displayed only.
+                                        <br>
+                                        7. When you click "Generate TestCaseFilter" or "Generate Tests filter", all the tests with checked checkboxes will be included, even invisible rows.
+                                        <br>
+                                        8. Checkbox Check / Uncheck All will check and uncheck only visible rows. If you wish to check/uncheck invisible rows, click "Show All Tests" before.
+                                        <br>
+                                        9. You can type notes and comments in the textarea to say something important about whole test run, or in the row for particular test. After "Save changes and comments" button is clicked, comments are saved in the new html report, report is downloaded automatically. Now you can share this new report with other people - they will be able to view your comments by clicking "Show comments" button.
+                                    </p><a class=ShowRules onclick='ReplaceClass("//tr[contains(@id,\"infoRow\")]", "v", "h");cursor:pointer;'>hide</a>
+          
+        
+      </table>
+      <table id=ReportsTable>
+        <thead>
+          <tr class=odd>
+            <th scope=col abbr=Test><input type=checkbox class=checkboxAll onclick='CUAll("//input[@class=\"checkboxAll\"]","//tr[contains(@id,\"rT\")][contains(@class,\"v\")]//input[@class=\"testCheckbox\"]");&#xD;&#xA;                  CU("//input[@class=\"checkboxAll\"]","//tr[contains(@id,\"rT\")][contains(@class,\"v\")]")'>
+            <th id=columnTestMethod scope=col abbr=Test>
+              <div onclick='SortRows("TM")' style=cursor:pointer>Test Method↕</div>
+            
+            <th id=columnTestClass scope=col>
+              <div onclick='SortRows("TC")' style=cursor:pointer>Test Class↕</div>
+            
+            <th id=columnTestCase scope=col>
+              <div onclick='SortRows("TstCs")' style=cursor:pointer>Test Case↕</div>
+            
+            <th id=columnBug scope=col>
+              <div onclick='SortRows("Bg")' style=cursor:pointer>Bug↕</div>
+            
+            <th id=columnCategories scope=col>
+              <div onclick='SortRows("TstCatgrs")' style=cursor:pointer>Categories↕</div>
+            
+            <th id=columne scope=col>
+              <div onclick='SortRows("E")' style=cursor:pointer>Error Message and notes↕</div>
+            
+            <th id=columnStartTime scope=col>
+              <div onclick='SortRows("ST")' style=cursor:pointer>Start Time↕</div>
+            
+            <th id=columnDuration scope=col>
+              <div onclick='SortRows("D")' style=cursor:pointer>Duration↕</div>
+            
+          
+        
+        <tbody>
+          <tr>
+            <td style=padding:3px><button onclick='ReplaceClass("//tr[contains(@id,\"rT\")]", "v", "h");&#xD;&#xA;                                    ReplaceClass("//tr[contains(@id,\"TsC\")]", "v", "h");&#xD;&#xA;                                    ReplaceClass("//tr[contains(@id,\"Stacktrace\")]", "v", "h");&#xD;&#xA;                                    FilterRows("TM", "TC", "TstCs", "Bg", "TstCatgrs", "E", "ST", "D");' style="font-size:17px;float:right;cursor:pointer;width:100%;padding:0 0 0 0">filter</button>
+            <td><input id=filterTM style=width:100%>
+            <td><input id=filterTC style=width:100%>
+            <td><input id=filterTstCs style=width:100%>
+            <td><input id=filterBg style=width:100%>
+            <td><input id=filterTstCatgrs style=width:100%>
+            <td><input id=filterE style=width:100%>
+            <td><input id=filterST style=width:100%>
+            <td><input id=filterD style=width:100%>
+          
+          <tr id="rT ID0AAB0CB" class="h testPassed">
+            <th class=cPassed><input type=checkbox class=testCheckbox onclick='CU("//tr[@id=\"rT ID0AAB0CB\"]//input","//tr[@id=\"rT ID0AAB0CB\"]")'>
+            <td id=rTM scope=row class=cPassed>
+              <div class=om onclick='SH("ID0AAB0CBTsC","ID0AAB0CBButton","FilterTest1","FilterTest1")'>
+                <div class="m tp" id=ID0AAB0CBButton>FilterTest1</div>
+              </div>
+            
+            <td id=rTC class=lt><span>Tests.FilterTest</span>
+            <td id=rTstCs><span><a target=_blank href=https://demo.com/testcase/1>1</a></span>
+            <td id=rBg>
+            <td id=rTstCatgrs><span></span>
+            <td id=rE class=lt><span size=2 class="v l"><input id="rT ID0AAB0CB comment" class=ci type=text style=color:#e60909></span>
+            <td id=rST class=lt><span>15:16:21</span>
+            <td id=rD class=lt><span>00:06.673</span>
+          
+          <tr id=ID0AAB0CBTsC class=h>
+            <td>
+            <td>DEV-BY-0F8D3
+            <td colspan=7>
+              <div class=os onclick='SHs("ID0AXB0YB","ButtonID0AXB0YB","▲ Step 1 :: Create filter","▼ Step 1 :: Create filter","l")' id=ButtonID0AXB0YB>▲ Step
+                                1 ::
+                                Create filter</div><span id=ID0AXB0YB class=h>
+15:16:26,53 .. Set text Cell Address Input: A1
+15:16:26,59 .. Press key: Enter
+15:16:26,62 .. Click Menu item: Data
+15:16:26,68 .. Click Menu sub item: Create a filter
+15:16:26,90 .. </span><div class=os onclick='SHs("ID0A5B06B","ButtonID0A5B06B","▲ Step 2 :: Set cell values","▼ Step 2 :: Set cell values","l")' id=ButtonID0A5B06B>▲ Step
+                                2 ::
+                                Set cell values</div><span id=ID0A5B06B class=h>
+15:16:26,90 .. Set text Cell Address Input: A1
+15:16:26,91 .. Press key: Enter
+15:16:26,92 .. Type: TITLE
+15:16:27,00 .. Press key: Enter
+15:16:27,05 .. Set text Cell Address Input: A2
+15:16:27,11 .. Press key: Enter
+15:16:27,13 .. Type: abc
+15:16:27,17 .. Press key: Enter
+15:16:27,22 .. Set text Cell Address Input: A3
+15:16:27,27 .. Press key: Enter
+15:16:27,28 .. Type: qweee
+15:16:27,31 .. Press key: Enter
+15:16:27,35 .. Set text Cell Address Input: A4
+15:16:27,37 .. Press key: Enter
+15:16:27,38 .. Type: abcd
+15:16:27,41 .. Press key: Enter
+15:16:27,46 .. Set text Cell Address Input: A5
+15:16:27,48 .. Press key: Enter
+15:16:27,49 .. Type: abc
+15:16:27,52 .. Press key: Enter
+15:16:27,56 .. Set text Cell Address Input: A6
+15:16:27,58 .. Press key: Enter
+15:16:27,60 .. Type: xyz
+15:16:27,62 .. Press key: Enter
+15:16:27,66 .. </span><div class=os onclick='SHs("ID0AFC0GC","ButtonID0AFC0GC","▲ Step 3 :: Filter values and assert","▼ Step 3 :: Filter values and assert","l")' id=ButtonID0AFC0GC>▲ Step
+                                3 ::
+                                Filter values and assert</div><span id=ID0AFC0GC class=h>
+15:16:27,66 .. Set text Cell Address Input: A1
+15:16:27,67 .. Press key: Enter
+15:16:27,69 .. Press key: Control+Alt+R
+15:16:27,74 .. Click Checkbox: qweee
+15:16:27,77 .. Click Checkbox: abcd
+15:16:27,81 .. Click Button OK
+15:16:27,91 .. Set text Cell Address Input: A1
+15:16:27,91 .. Press key: Enter
+15:16:27,93 .. Press key: ArrowDown
+15:16:27,95 .. Press key: ArrowDown
+15:16:27,96 .. Press key: ArrowDown
+15:16:27,98 .. Press key: ArrowDown
+15:16:27,99 .. correct count of cell values: 5
+15:16:28,00 .. cell values #1 [A1] is correct: TITLE
+15:16:28,00 .. cell values #2 [A2] is correct: abc
+15:16:28,00 .. cell values #3 [A5] is correct: abc
+15:16:28,00 .. cell values #4 [A6] is correct: xyz
+15:16:28,00 .. cell values #5 [A7] is correct: 
+15:16:28,00 .. </span><br>
+          
+        
+      </table>
+    </div>
+  

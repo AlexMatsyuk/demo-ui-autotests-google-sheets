@@ -1,0 +1,19 @@
+{
+  "Delete": "Supprimer",
+  "OK": "OK",
+  "Cancel": "Annuler",
+  "Save": "Enregistrer",
+  "Close": "Fermer",
+  "Apply": "Appliquer",
+  "Clear": "Effacer",
+  "SelectAll": "Tout sélectionner",
+  "FilterByCondition": "Filtrer par condition",
+  "FilterByValues": "Filtrer par valeurs",
+  "File": "Fichier",
+  "Edit": "Édition",
+  "Insert": "Insertion",
+  "Format": "Format",
+  "Data": "Données",
+  "CreateFilter": "Créer un filtre",
+  "RemoveFilter": "Supprimer le filtre"
+}

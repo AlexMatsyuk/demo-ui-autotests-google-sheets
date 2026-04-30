@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <LangVersion>12</LangVersion>
+        <SonarQubeTestProject>false</SonarQubeTestProject>
+        <OutputType>Exe</OutputType>
+        <RootNamespace>HtmlReport</RootNamespace>
+        <UseRazorBuildServer>false</UseRazorBuildServer>
+        <Platforms>AnyCPU</Platforms>
+        <Nullable>disable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="NUglify" Version="1.21.17" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="Trxer.xslt">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="TrxerTable.css">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Trxer.css">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="functions.js">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+</Project>
