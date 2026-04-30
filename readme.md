@@ -12,7 +12,7 @@ A demo project showcasing UI test automation for Google Sheets filter functional
 ## Quick Start
 
 ### Running Tests
-Simply double-click `run.bat`  
+Simply double-click `run.bat` (in the /GoogleDocs directory)  
 
 Requires:  
 - [.NET 10 SDK](https://dotnet.microsoft.com/en-us/download)
