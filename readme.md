@@ -12,8 +12,13 @@ A demo project showcasing UI test automation for Google Sheets filter functional
 ## Quick Start
 
 ### Running Tests
+Simply double-click `run.bat`  
 
-Simply double-click `run.bat` in Windows  
+Requires:  
+- [.NET 10 SDK](https://dotnet.microsoft.com/en-us/download)
+- Windows
+- Chrome browser
+
 
 ### Sample Reports
 
@@ -154,9 +159,3 @@ All settings are in `Tests/appsettings.json`. Key sections:
 | `Wait` | Timeouts and polling intervals |
 | `Log` | Logging verbosity and options |
 | `TestTracking` | External system integration |
-
-## Requirements
-
-- .NET 10 SDK
-- Windows (for full functionality)
-- Chrome browser
